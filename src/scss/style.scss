@@ -1,0 +1,21 @@
+@import "libs";
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+@import "mixins";
+@import "variables";
+@import "fonts";
+
+
+
+*{
+  background-color: red;
+}
+
+//@import "media";
