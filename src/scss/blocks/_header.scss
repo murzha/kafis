@@ -1,0 +1,130 @@
+.header {
+  &-feed {
+    @extend %text-16-medium;
+    color: $black-color;
+
+    a {
+      text-decoration: none;
+      color: $black-color;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    .container-xl {
+      height: 94px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $white-color;
+      color: $black-color;
+    }
+
+    &__right {
+      display: flex;
+      align-items: center;
+    }
+
+    &__contacts {
+      display: flex;
+      margin-right: 20px;
+
+      &-item {
+        display: flex;
+        align-items: center;
+
+        &:first-child {
+          margin-right: 20px;
+        }
+
+        img {
+          margin-right: 6px;
+        }
+      }
+    }
+
+    &__social {
+      margin-right: 20px;
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+        li {
+          margin-right: 10px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    &__language {
+      display: flex;
+      align-items: center;
+
+      span {
+        margin-left: 6px;
+        margin-right: 4px;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+    }
+  }
+
+  &-nav {
+    height: 54px;
+    background-color: $primary-color;
+    color: $white;
+    @extend %text-16-medium;
+
+    .container-xl {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      justify-content: space-between;
+    }
+
+    &__menu {
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+
+        li {
+          margin-right: 16px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          a {
+            text-decoration: none;
+            color: $white-color;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+
+    &__search {
+      display: flex;
+      align-items: center;
+
+      span {
+        margin-left: 6px;
+      }
+
+      color: $white-color;
+      text-transform: uppercase;
+    }
+  }
+}

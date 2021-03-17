@@ -1,4 +1,8 @@
 @import "libs";
+@import "mygrid";
+@import "mixins";
+@import "ui-kit";
+@import "fonts";
 
 html {
   box-sizing: border-box;
@@ -8,14 +12,8 @@ html {
   box-sizing: inherit;
 }
 
-@import "mixins";
-@import "variables";
-@import "fonts";
-
-
-
-*{
-  background-color: red;
+body {
+  background-color: $white-color;
 }
 
-//@import "media";
+@import "blocks/header";

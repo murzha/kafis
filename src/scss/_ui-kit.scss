@@ -1,0 +1,30 @@
+$primary-color: #B1040E;
+$secondary-color: #820000;
+$yellow-color: #FCDF51;
+$white-color: #FFFDFD;
+$light-bg-color: #FAF6ED;
+$black-color: #323232;
+
+%text-medium {
+  font-family: Avenir Next Cyr, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+%text-16-medium {
+  @extend %text-medium;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+%text-18-30-medium {
+  @extend %text-medium;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+%text-18-24-medium {
+  @extend %text-medium;
+  font-size: 18px;
+  line-height: 24px;
+}
