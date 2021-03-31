@@ -5,10 +5,26 @@ $white-color: #FFFDFD;
 $light-bg-color: #FAF6ED;
 $black-color: #323232;
 
+%title-20-semi-bold {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+%title-30-semi-bold {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+}
+
 %text-medium {
   font-family: Avenir Next Cyr, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 %text-16-medium {
@@ -17,14 +33,14 @@ $black-color: #323232;
   line-height: 22px;
 }
 
-%text-18-30-medium {
-  @extend %text-medium;
-  font-size: 18px;
-  line-height: 30px;
-}
-
 %text-18-24-medium {
   @extend %text-medium;
   font-size: 18px;
   line-height: 24px;
+}
+
+%text-18-30-medium {
+  @extend %text-medium;
+  font-size: 18px;
+  line-height: 30px;
 }

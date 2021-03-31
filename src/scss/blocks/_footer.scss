@@ -1,0 +1,89 @@
+.footer {
+  &-main {
+    background-color: $light-bg-color;
+  }
+
+  &-nav {
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+    a {
+      text-decoration: none;
+      color: $black-color;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    &__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      @extend %text-16-medium;
+      color: $black-color;
+
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        img {
+          margin-right: 6px;
+        }
+      }
+
+      &-title {
+        display: flex;
+        font-family: Montserrat, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: $black-color;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .site-created-by {
+    font-family: Avenir Next Cyr, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: $black-color;
+    text-align: center;
+    padding-bottom: 20px;
+
+    a {
+      text-decoration: none;
+      color: $primary-color;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+
+  &-copyright {
+    background-color: $primary-color;
+    padding: 14px 0;
+
+    span {
+      display: block;
+      text-align: center;
+      font-family: Avenir Next Cyr, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      color: $white-color;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.specialty {
+  &-title {
+    margin: 0;
+    @extend %title-30-semi-bold;
+    color: $primary-color;
+
+    &__img{
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+  }
+
+  &-options {
+    list-style: none;
+    margin: 20px 0 0;
+    padding: 0;
+
+    @extend %text-18-30-medium;
+
+    li {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      @extend %text-18-30-medium;
+      color: $black-color;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  &-description {
+    margin-top: 40px;
+
+    &__title {
+      @extend %title-20-semi-bold;
+      color: $primary-color;
+    }
+
+    &__list {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 0;
+
+      @extend %text-18-24-medium;
+      color: $black-color;
+
+      li {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        img {
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+}
