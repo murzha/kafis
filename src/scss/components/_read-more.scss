@@ -1,0 +1,14 @@
+.read-more {
+  a {
+    display: flex;
+    align-items: center;
+    @extend %text-16-medium;
+    color: $primary-color;
+    text-decoration: none;
+    font-weight: 500;
+
+    img {
+      margin-left: 2px;
+    }
+  }
+}

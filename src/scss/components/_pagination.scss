@@ -1,0 +1,45 @@
+.pagination {
+  display: flex;
+
+  &__item {
+    width: 34px;
+    height: 34px;
+    background-color: $light-bg-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: $black-color;
+    text-decoration: none;
+
+    margin-right: 6px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    img {
+      width: 18px;
+      height: 18px;
+    }
+
+    &:hover {
+      color: $white-color;
+      background-color: $primary-color;
+    }
+
+    &.active {
+      color: $white-color;
+      background-color: $primary-color;
+
+      &:hover {
+        background-color: $secondary-color;
+      }
+    }
+  }
+}

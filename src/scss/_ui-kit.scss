@@ -3,7 +3,16 @@ $secondary-color: #820000;
 $yellow-color: #FCDF51;
 $white-color: #FFFDFD;
 $light-bg-color: #FAF6ED;
-$black-color: #323232;
+$black-color: #474747;
+
+%section-title {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-transform: uppercase;
+}
 
 %title-20-semi-bold {
   font-family: Montserrat, sans-serif;
