@@ -1,0 +1,19 @@
+.back-link {
+  a {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    @extend %text-16-medium;
+    color: $black-color;
+
+    img {
+      transform: rotate(-180deg);
+      margin-right: 6px;
+    }
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}

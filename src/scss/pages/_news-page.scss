@@ -1,0 +1,37 @@
+.news-page {
+  &__title {
+    margin: 20px 0 0;
+    @extend %title-36-bold;
+    color: $black-color;
+  }
+
+  &__content {
+    .news__date-and-category {
+      margin-top: 20px;
+    }
+  }
+
+  &__text {
+    margin-top: 20px;
+    @extend %text-18-30-medium;
+    color: $black-color;
+
+    p {
+      margin-bottom: 38px;
+      text-align: justify;
+
+      a {
+        text-decoration: none;
+        color: $primary-color;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
