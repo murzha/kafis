@@ -7,10 +7,7 @@
   }
 
   &-content {
-    .section-title {
-      @extend %section-title;
-      color: $black-color;
-    }
+
   }
 
   &-item {

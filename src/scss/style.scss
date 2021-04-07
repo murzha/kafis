@@ -18,6 +18,7 @@ body {
 @import "blocks/header";
 @import "blocks/footer";
 
+@import "components/titles";
 @import "components/watermark";
 @import "components/main-content-wrapper";
 @import "components/pagination";
@@ -26,4 +27,5 @@ body {
 
 @import "pages/specialties-description";
 @import "pages/news";
-@import "pages/news-page";
+@import "pages/news-single";
+@import "pages/teachers";

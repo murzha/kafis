@@ -1,11 +1,18 @@
 .watermark {
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 1;
+  &-top-page, &-bottom-page {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
 
-  img {
-    width: 339px;
-    height: 226px;
+    img {
+      width: 339px;
+      height: 226px;
+    }
+  }
+
+  &-bottom-page {
+    bottom: 0;
+    top: auto;
   }
 }

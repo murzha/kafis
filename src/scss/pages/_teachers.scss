@@ -1,0 +1,71 @@
+.teachers {
+  &-items {
+    margin-bottom: 40px;
+
+    .teachers-item__wrapper {
+      &:nth-child(1n+3) {
+        margin-top: 18px;
+      }
+    }
+  }
+
+  &-item {
+    display: flex;
+    background-color: $light-bg-color;
+
+    &__img {
+      img {
+        width: 148px;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__info {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      padding: 32px 20px;
+    }
+
+    &__name {
+      margin: 0;
+      padding: 0;
+
+      a {
+        @extend %title-18-bold;
+        color: $primary-color;
+        text-decoration: none;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+
+    &__position, &__mail, &__schedule {
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+
+      span {
+        margin-left: 6px;
+        @extend %text-16-medium;
+        color: $black-color;
+      }
+    }
+
+    &__mail, &__schedule {
+      text-decoration: none;
+
+      &:hover span {
+        color: $secondary-color;
+      }
+    }
+
+    &__schedule span {
+      color: $primary-color;
+    }
+  }
+}
