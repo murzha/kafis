@@ -14,8 +14,12 @@
     background-color: $light-bg-color;
 
     &__img {
+      display: flex;
+      height: 100%;
+      width: 148px;
+
       img {
-        width: 148px;
+        width: max-content;
         height: 100%;
         object-fit: cover;
       }
@@ -26,7 +30,7 @@
       justify-content: center;
       flex-direction: column;
       width: 100%;
-      padding: 32px 20px;
+      padding: 28px 20px;
     }
 
     &__name {
