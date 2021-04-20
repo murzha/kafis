@@ -1,7 +1,5 @@
 .teachers {
   &-items {
-    margin-bottom: 40px;
-
     .teachers-item__wrapper {
       &:nth-child(1n+3) {
         margin-top: 18px;
@@ -15,11 +13,12 @@
 
     &__img {
       display: flex;
-      height: 100%;
-      width: 148px;
+      height: 180px;
+      min-width: 140px;
+      max-width: 140px;
 
       img {
-        width: max-content;
+        width: 100%;
         height: 100%;
         object-fit: cover;
       }
@@ -38,7 +37,12 @@
       padding: 0;
 
       a {
-        @extend %title-18-bold;
+        font-family: Montserrat, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+
         color: $primary-color;
         text-decoration: none;
 
@@ -55,7 +59,9 @@
 
       span {
         margin-left: 6px;
-        @extend %text-16-medium;
+        @extend %text-medium;
+        font-size: 14px;
+        line-height: 22px;
         color: $black-color;
       }
     }
@@ -70,6 +76,12 @@
 
     &__schedule span {
       color: $primary-color;
+    }
+  }
+
+  &-content {
+    .pagination {
+      margin-top: 40px;
     }
   }
 }

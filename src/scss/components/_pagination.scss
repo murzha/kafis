@@ -23,6 +23,12 @@
       margin-right: 0;
     }
 
+    &.prev {
+      img {
+        transform: rotate(180deg);
+      }
+    }
+
     img {
       width: 18px;
       height: 18px;
@@ -31,6 +37,7 @@
     &:hover {
       color: $white-color;
       background-color: $primary-color;
+      cursor: pointer;
     }
 
     &.active {

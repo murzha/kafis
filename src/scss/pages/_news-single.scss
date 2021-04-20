@@ -16,18 +16,52 @@
     @extend %text-18-30-medium;
     color: $black-color;
 
-    p {
-      margin-bottom: 38px;
-      text-align: justify;
+    b, strong {
+      font-weight: 600;
+    }
 
-      a {
-        text-decoration: none;
-        color: $primary-color;
+    a {
+      text-decoration: none;
+      color: $primary-color;
 
-        &:hover {
-          color: $secondary-color;
-        }
+      &:hover {
+        color: $secondary-color;
       }
+    }
+
+    blockquote {
+      display: block;
+      padding: 15px 45px;
+      margin: 0 0 20px;
+      position: relative;
+      text-align: justify;
+      border-left: 6px solid $primary-color;
+      background-color: $light-bg-color;
+    }
+
+    blockquote::before {
+      content: "\201C";
+
+      /*Font*/
+      font-family: Georgia, serif;
+      font-size: 60px;
+      font-weight: bold;
+      color: $black-color;
+
+      /*Positioning*/
+      position: absolute;
+      left: 10px;
+      top: 5px;
+    }
+
+    blockquote::after {
+      /*Reset to make sure*/
+      content: "";
+    }
+
+    p {
+      margin-bottom: 32px;
+      text-align: justify;
     }
 
     img {

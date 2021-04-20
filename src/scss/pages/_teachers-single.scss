@@ -59,6 +59,10 @@
     ol {
       margin: 0;
       padding: 0 0 0 20px;
+
+      & > li {
+        text-align: justify;
+      }
     }
 
     ul {
@@ -66,7 +70,13 @@
       margin: 0;
       list-style: none;
 
+      & > li {
+        text-align: justify;
+      }
+
       &.publications-links {
+        margin-top: 10px;
+
         a {
           color: $black-color;
 
