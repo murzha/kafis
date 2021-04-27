@@ -15,16 +15,21 @@ body {
   background-color: $white-color;
 }
 
+main {
+  min-height: 52vh;
+}
+
 @import "blocks/header";
 @import "blocks/footer";
 
-@import "components/titles";
+@import "components/text-styles";
 @import "components/watermark";
 @import "components/main-content-wrapper";
 @import "components/pagination";
 @import "components/read-more";
 @import "components/back-link";
 
+@import "pages/homepage";
 @import "pages/specialties-description";
 @import "pages/news";
 @import "pages/news-single";

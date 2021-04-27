@@ -29,6 +29,14 @@
       }
     }
 
+    ul {
+      li {
+        &::marker {
+          color: $primary-color;
+        }
+      }
+    }
+
     blockquote {
       display: block;
       padding: 15px 45px;
@@ -42,20 +50,17 @@
     blockquote::before {
       content: "\201C";
 
-      /*Font*/
       font-family: Georgia, serif;
       font-size: 60px;
       font-weight: bold;
       color: $black-color;
 
-      /*Positioning*/
       position: absolute;
       left: 10px;
       top: 5px;
     }
 
     blockquote::after {
-      /*Reset to make sure*/
       content: "";
     }
 
@@ -66,6 +71,7 @@
 
     img {
       max-width: 100%;
+      height: auto;
     }
   }
 }

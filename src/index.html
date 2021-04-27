@@ -53,16 +53,26 @@
     </section>
     <section class="header-nav">
         <div class="container-xl">
-            <div class="header-nav__menu">
-                <ul>
-                    <li><a href="#">Головна</a></li>
-                    <li><a href="#">Викладачі</a></li>
-                    <li><a href="#">Новини та події</a></li>
-                    <li><a href="#">Партнерство</a></li>
-                    <li><a href="#">Навчання</a></li>
-                    <li><a href="#">Контакти</a></li>
-                </ul>
-            </div>
+            <ul class="header-nav__menu">
+                <li class="header-nav__menu-item active">
+                    <a href="#">Головна</a>
+                </li>
+                <li class="header-nav__menu-item">
+                    <a href="#">Викладачі</a>
+                </li>
+                <li class="header-nav__menu-item">
+                    <a href="#">Новини та події</a>
+                </li>
+                <li class="header-nav__menu-item">
+                    <a href="#">Партнерство</a>
+                </li>
+                <li class="header-nav__menu-item">
+                    <a href="#">Навчання</a>
+                </li>
+                <li class="header-nav__menu-item">
+                    <a href="#">Контакти</a>
+                </li>
+            </ul>
             <div class="header-nav__search">
                 <a href="" class="search-btn">
                     <img src="icons/search.svg" alt="search">
@@ -72,50 +82,659 @@
         </div>
     </section>
 </header>
-<main>
-    <section class="main-section"></section>
-    <section class="our-advantages"></section>
+<main class="homepage">
+    <section class="homepage-main">
+        <div class="homepage-main__slider">
+            <img src="img/main-page/main-section/main-section.jpg" alt="image"/>
+            <img src="img/main-page/main-section/main-section.jpg" alt="image"/>
+        </div>
+        <div class="homepage-main__text-wrapper">
+            <div class="container-xl">
+                <div class="homepage-main__text">
+                    <h1>Кафедра інформаційних систем</h1>
+                    <h2>ХНЕУ ім. Семена Кузнеця</h2>
+                </div>
+            </div>
+        </div>
+        <div class="homepage-main__more-info">
+            <a href="#" class="homepage-main__more-info__link">
+                <img src="icons/arrows/circle-arrow.svg" alt="arrow">
+                <span>Детальніше про кафедру</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="our-advantages">
+        <div class="container-xl">
+            <div class="homepage-title">
+                <h3 class="section-subtitle">Наші</h3>
+                <h2 class="section-title">Переваги</h2>
+            </div>
+            <div class="our-advantages__items homepage-content-mt">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="our-advantages__item">
+                            <img src="img/main-page/our-advantages/student.svg" alt="student"
+                                 class="item-icon">
+                            <h4 class="item-title">ТОП-100</h4>
+                            <p class="item-text">
+                                Серед найпопулярніших вишів України <br>
+                                2019 року серед абітурієнтів <br>
+                                та <strong>3 місце</strong> серед харківських вишів.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="our-advantages__item">
+                            <img src="img/main-page/our-advantages/knowledge.svg" alt="knowledge"
+                                 class="item-icon">
+                            <h4 class="item-title">DOU 2019</h4>
+                            <p class="item-text">
+                                У рейтингу щодо якості IT-освіти <br>
+                                ХНЕУ посів <strong>4 місце</strong> в Україні <br>
+                                та <strong>1 місце</strong> в Харкові.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="our-advantages__item">
+                            <img src="img/main-page/our-advantages/library.svg" alt="library"
+                                 class="item-icon">
+                            <h4 class="item-title">U-Multirank: 2019</h4>
+                            <p class="item-text">
+                                ХНЕУ увійшов у <strong>топ-25</strong> кращих <br>
+                                університетів світу за індикатором <br>
+                                «Contact to work environment».
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="what-we-study homepage-mt">
+        <div class="watermark__what-we-study">
+            <img src="img/grayscale-images/first.png" alt="grayscale-image">
+        </div>
+        <div class="container-xl">
+            <div class="homepage-title">
+                <h3 class="section-subtitle">Що ми</h3>
+                <h2 class="section-title">вивчаємо</h2>
+            </div>
+            <div class="what-we-study__items homepage-content-mt">
+                <div class="row">
+                    <div class="col-6 what-we-study__item-col">
+                        <div class="what-we-study__item">
+                            <img src="img/main-page/what-we-study/programming.svg" alt="programming"
+                                 class="item-icon">
+                            <div class="item-text-content">
+                                <h4 class="item-title">Мови програмування:</h4>
+                                <ul class="item-list">
+                                    <li>C/C++</li>
+                                    <li>C#</li>
+                                    <li>Java</li>
+                                    <li>PHP</li>
+                                    <li>Kotlin</li>
+                                    <li>Python</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 what-we-study__item-col">
+                        <div class="what-we-study__item">
+                            <img src="img/main-page/what-we-study/databases.svg" alt="databases"
+                                 class="item-icon">
+                            <div class="item-text-content">
+                                <h4 class="item-title">Бази даних:</h4>
+                                <ul class="item-list">
+                                    <li>MySQL</li>
+                                    <li>SQLite</li>
+                                    <li>MongoDB</li>
+                                    <li>PostgreSQL</li>
+                                    <li>MariaDB</li>
+                                    <li>Microsoft SQL</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 what-we-study__item-col">
+                        <div class="what-we-study__item">
+                            <img src="img/main-page/what-we-study/code.svg" alt="code"
+                                 class="item-icon">
+                            <div class="item-text-content">
+                                <h4 class="item-title">Середовища розробки:</h4>
+                                <ul class="item-list">
+                                    <li>Visual Studio</li>
+                                    <li>IntelliJ IDEA</li>
+                                    <li>Eclipse</li>
+                                    <li>Android Studio</li>
+                                    <li>WebStorm</li>
+                                    <li>Xcode</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 what-we-study__item-col">
+                        <div class="what-we-study__item">
+                            <img src="img/main-page/what-we-study/binary-code.svg" alt="binary-code"
+                                 class="item-icon">
+                            <div class="item-text-content">
+                                <h4 class="item-title">Технології:</h4>
+                                <ul class="item-list">
+                                    <li>Progressive Web Applications</li>
+                                    <li>Big Data</li>
+                                    <li>Parallel Programming</li>
+                                    <li>Data security</li>
+                                    <li>Cloud computing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 what-we-study__item-col">
+                        <div class="what-we-study__item">
+                            <img src="img/main-page/what-we-study/operating-system.svg" alt="operating-system"
+                                 class="item-icon">
+                            <div class="item-text-content">
+                                <h4 class="item-title">Операційні системи:</h4>
+                                <ul class="item-list">
+                                    <li>Android</li>
+                                    <li>iOS</li>
+                                    <li>Windows</li>
+                                    <li>Linux</li>
+                                    <li>MacOS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 what-we-study__item-col">
+                        <div class="what-we-study__item">
+                            <img src="img/main-page/what-we-study/software-products.svg" alt="software-products"
+                                 class="item-icon">
+                            <div class="item-text-content">
+                                <h4 class="item-title">Програмні продукти:</h4>
+                                <ul class="item-list">
+                                    <li>ARIS</li>
+                                    <li>MS Project</li>
+                                    <li>Ramus</li>
+                                    <li>Rational Rose</li>
+                                    <li>Xmind</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="we-propose homepage-mt">
+        <div class="we-propose__section-img">
+            <img src="img/main-page/we-propose/we-propose-img.jpg" alt="we-propose-img">
+        </div>
+        <div class="we-propose__section-content">
+            <div class="we-propose__text">
+                <div class="row">
+                    <div class="col-9">
+                        <div class="homepage-title">
+                            <h3 class="section-subtitle">Що ми пропонуємо</h3>
+                            <h2 class="section-title">Нашим студентам</h2>
+                        </div>
+                        <ul class="we-propose__items-list">
+                            <li>Навчання у співпраці з IT-компаніями: лекції, тренінги, практика, менторство</li>
+                            <li>Отримання професійних сертифікатів компаній Microsoft та IBM</li>
+                            <li>Міжнародна освітня мобільність: Франція, Німеччина, Словакія, Румунія</li>
+                            <li>Навчання в міжнародних програмах та отримання подвійного диплома</li>
+                            <li>Дуальна освіта на старших курсах</li>
+                            <li>Навчання англійською</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="we-propose__watermark">
+                <img src="img/grayscale-images/second.png" alt="grayscale-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="future-professions homepage-mt">
+        <div class="container-xl">
+            <div class="homepage-title">
+                <h3 class="section-subtitle">Наші студенти</h3>
+                <h2 class="section-title">здобувають такі професії</h2>
+            </div>
+            <div class="future-professions__items homepage-content-mt">
+                <div class="row">
+                    <div class="col-3 future-professions__item-col">
+                        <div class="future-professions__item">
+                            <img src="img/main-page/future-professions/architect.svg" alt="architect"
+                                 class="item-icon">
+                            <h4 class="item-title">Architect</h4>
+                        </div>
+                    </div>
+                    <div class="col-3 future-professions__item-col">
+                        <div class="future-professions__item">
+                            <img src="img/main-page/future-professions/business-analyst.svg" alt="business-analyst"
+                                 class="item-icon">
+                            <h4 class="item-title">Business Analyst</h4>
+                        </div>
+                    </div>
+                    <div class="col-3 future-professions__item-col">
+                        <div class="future-professions__item">
+                            <img src="img/main-page/future-professions/computer-science.svg" alt="computer-science"
+                                 class="item-icon">
+                            <h4 class="item-title">Computer Scientist</h4>
+                        </div>
+                    </div>
+                    <div class="col-3 future-professions__item-col">
+                        <div class="future-professions__item">
+                            <img src="img/main-page/future-professions/database-administrator.svg"
+                                 alt="database-administrator"
+                                 class="item-icon">
+                            <h4 class="item-title">Database Administrator</h4>
+                        </div>
+                    </div>
+                    <div class="col-3 future-professions__item-col">
+                        <div class="future-professions__item">
+                            <img src="img/main-page/future-professions/project-manager.svg" alt="project-manager"
+                                 class="item-icon">
+                            <h4 class="item-title">Project Manager</h4>
+                        </div>
+                    </div>
+                    <div class="col-3 future-professions__item-col">
+                        <div class="future-professions__item">
+                            <img src="img/main-page/future-professions/qa-engineer.svg" alt="qa-engineer"
+                                 class="item-icon">
+                            <h4 class="item-title">QA engineer</h4>
+                        </div>
+                    </div>
+                    <div class="col-3 future-professions__item-col">
+                        <div class="future-professions__item">
+                            <img src="img/main-page/future-professions/system-administrator.svg"
+                                 alt="system-administrator"
+                                 class="item-icon">
+                            <h4 class="item-title">System Administrator</h4>
+                        </div>
+                    </div>
+                    <div class="col-3 future-professions__item-col">
+                        <div class="future-professions__item">
+                            <img src="img/main-page/future-professions/software-developer.svg" alt="software-developer"
+                                 class="item-icon">
+                            <h4 class="item-title">Software Developer</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="specialties homepage-mt">
+        <div class="container-xl">
+            <div class="homepage-title">
+                <h3 class="section-subtitle">Ми готуемо студентів за</h3>
+                <h2 class="section-title">спеціальностями</h2>
+            </div>
+            <div class="specialties__items homepage-content-mt">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="specialties__item">
+                            <img src="img/main-page/specialties/programming.svg" alt="programming"
+                                 class="item-icon">
+                            <div class="item-text-content">
+                                <h4 class="item-title">121 Інженерія програмного забезпечення</h4>
+                                <ul class="item-list">
+                                    <li>Проектування, розробка та впровадження програмного забезпечення;</li>
+                                    <li>Проектування та реалізація баз даних;</li>
+                                    <li>Розробка алгоритмів та структур даних для програмних продуктів;</li>
+                                    <li>Проектування компонентів архітектури програмних систем.</li>
+                                </ul>
+                            </div>
+                            <div class="read-more">
+                                <a href="#">
+                                    <span>Детальніше</span>
+                                    <img src="icons/arrows/arrow-red.svg" alt="arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="specialties__item">
+                            <img src="img/main-page/specialties/computer-science.svg" alt="computer-science"
+                                 class="item-icon">
+                            <div class="item-text-content">
+                                <h4 class="item-title">122 Комп’ютерні науки</h4>
+                                <ul class="item-list">
+                                    <li>Проектування та впровадження комп’ютерних систем і технологій;</li>
+                                    <li>Створення алгоритмічного та програмного забезпечення систем обробки
+                                        інформації;
+                                    </li>
+                                    <li>Оцінювання ефективності комп’ютерних систем;</li>
+                                    <li>Консультування з питань комп’ютеризації всіх сфер діяльності.</li>
+                                </ul>
+                            </div>
+                            <div class="read-more">
+                                <a href="#">
+                                    <span>Детальніше</span>
+                                    <img src="icons/arrows/arrow-red.svg" alt="arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="specialties__item">
+                            <img src="img/main-page/specialties/information-technologies.svg"
+                                 alt="information-technologies" class="item-icon">
+                            <div class="item-text-content">
+                                <h4 class="item-title">126 Інформаційні системи та технології</h4>
+                                <ul class="item-list">
+                                    <li>Проектування та впровадження інформаційних систем і технологій;</li>
+                                    <li>Створення програмного забезпечення;</li>
+                                    <li>Аналіз проектів та програм готових систем, бізнес-аналіз;</li>
+                                    <li>Консультування з питань комп’ютеризації всіх сфер діяльності.</li>
+                                </ul>
+                            </div>
+                            <div class="read-more">
+                                <a href="#">
+                                    <span>Детальніше</span>
+                                    <img src="icons/arrows/arrow-red.svg" alt="arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="international-programs homepage-mt">
+        <div class="container-xl">
+            <div class="homepage-title">
+                <h3 class="section-subtitle">Наша кафедра пропонує студентам такі</h3>
+                <h2 class="section-title">Міжнародні програми</h2>
+            </div>
+            <div class="international-programs__items homepage-content-mt">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="international-programs__item">
+                            <div class="item-icon__wrapper">
+                                <div class="item-icon">
+                                    <img src="img/main-page/international-programs/france-lyon.png"
+                                         alt="france-lyon">
+                                </div>
+                            </div>
+
+                            <div class="item-text-content">
+                                <h4 class="item-title">Українсько-французька
+                                    програма</h4>
+                                <p class="item-text">
+                                    Спільна українсько-французька програма підготовки
+                                    магістрів за фахом <br>
+                                    “Бізнес-інформатика” з університетом <br>
+                                    Ліон-2 ім. Люм’єра.
+                                </p>
+                            </div>
+                            <div class="read-more">
+                                <a href="#">
+                                    <span>Детальніше</span>
+                                    <img src="icons/arrows/arrow-red.svg" alt="arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="international-programs__item">
+                            <div class="item-icon__wrapper">
+                                <div class="item-icon">
+                                    <img src="img/main-page/international-programs/slovenska.png"
+                                         alt="slovenska">
+                                </div>
+                            </div>
+
+                            <div class="item-text-content">
+                                <h4 class="item-title">Словацько-українська магістерська програма</h4>
+                                <p class="item-text">
+                                    Спільна словацько-українська магістерська програма “Бізнес-аналітика та інформаційні
+                                    системи у підприємництві” з Вищою школою економіки та менеджменту в публічному
+                                    адмініструвані в м. Братислава (Словаччина).
+                                </p>
+                            </div>
+                            <div class="read-more">
+                                <a href="#">
+                                    <span>Детальніше</span>
+                                    <img src="icons/arrows/arrow-red.svg" alt="arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-graduates homepage-mt">
+        <div class="container-xl">
+            <div class="homepage-title">
+                <h3 class="section-subtitle">Наші</h3>
+                <h2 class="section-title">випускники</h2>
+            </div>
+            <div class="alumni-now homepage-content-mt">
+                <a href="#">
+                    <img src="img/main-page/our-graduates/alumni-now.svg" alt="alumni-now">
+                </a>
+            </div>
+            <div class="our-graduates__items homepage-content-mt">
+                <div class="row">
+                    <div class="col-4 our-graduates__item-col">
+                        <div class="our-graduates__item">
+                            <img src="img/main-page/our-graduates/first.jpg" alt="our-graduates">
+                        </div>
+                    </div>
+                    <div class="col-4 our-graduates__item-col">
+                        <div class="our-graduates__item">
+                            <img src="img/main-page/our-graduates/second.jpg" alt="our-graduates">
+                        </div>
+                    </div>
+                    <div class="col-4 our-graduates__item-col">
+                        <div class="our-graduates__item">
+                            <img src="img/main-page/our-graduates/third.jpg" alt="our-graduates">
+                        </div>
+                    </div>
+                    <div class="col-4 our-graduates__item-col">
+                        <div class="our-graduates__item">
+                            <img src="img/main-page/our-graduates/fourth.jpg" alt="our-graduates">
+                        </div>
+                    </div>
+                    <div class="col-4 our-graduates__item-col">
+                        <div class="our-graduates__item">
+                            <img src="img/main-page/our-graduates/fifth.jpg" alt="our-graduates">
+                        </div>
+                    </div>
+                    <div class="col-4 our-graduates__item-col">
+                        <div class="our-graduates__item">
+                            <img src="img/main-page/our-graduates/sixth.jpg" alt="our-graduates">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-partners homepage-mt">
+        <div class="container-xl">
+            <div class="homepage-title">
+                <h3 class="section-subtitle">Наші</h3>
+                <h2 class="section-title">Партнери</h2>
+            </div>
+
+            <div class="our-partners__items homepage-content-mt">
+                <div class="row">
+                    <div class="col-3 our-partners__item-col">
+                        <a href="#" class="our-partners__item">
+                            <img src="img/partners/akvelon.png" alt="akvelon">
+                        </a>
+                    </div>
+                    <div class="col-3 our-partners__item-col">
+                        <a href="#" class="our-partners__item">
+                            <img src="img/partners/artjoker.svg" alt="artjoker">
+                        </a>
+                    </div>
+                    <div class="col-3 our-partners__item-col">
+                        <a href="#" class="our-partners__item">
+                            <img src="img/partners/artlemon.svg" alt="artlemon">
+                        </a>
+                    </div>
+                    <div class="col-3 our-partners__item-col">
+                        <a href="#" class="our-partners__item">
+                            <img src="img/partners/alevel.png" alt="alevel">
+                        </a>
+                    </div>
+                    <div class="col-3 our-partners__item-col">
+                        <a href="#" class="our-partners__item">
+                            <img src="img/partners/beetroot.svg" alt="beetroot">
+                        </a>
+                    </div>
+                    <div class="col-3 our-partners__item-col">
+                        <a href="#" class="our-partners__item">
+                            <img src="img/partners/ciklum.svg" alt="ciklum">
+                        </a>
+                    </div>
+                    <div class="col-3 our-partners__item-col">
+                        <a href="#" class="our-partners__item">
+                            <img src="img/partners/dataart.svg" alt="dataart">
+                        </a>
+                    </div>
+                    <div class="col-3 our-partners__item-col">
+                        <a href="#" class="our-partners__item">
+                            <img src="img/partners/dch.svg" alt="dch">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="final-quote homepage-mt">
+        <div class="final-quote__content">
+            <div class="final-quote__bg">
+                <div class="final-quote__bg-img">
+                    <img src="img/main-page/final-quote/final-quote-bg.jpg" alt="final-quote-bg">
+                </div>
+            </div>
+            <div class="final-quote__text-wrapper">
+                <div class="container-xl final-quote__text-container">
+                    <div class="final-quote__text">
+                        <h2>Молодь обирає тільки найсучасніші технології, вона обирає кафедру Інформаційних систем!</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
-<div class="container">
-    <div class="row">
-        <div class="col">
-            One of three columns
+
+<footer class="footer">
+    <section class="footer-main">
+        <div class="container-xl">
+            <div class="footer-nav">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <span class="footer-nav__list-title">Меню</span>
+                        <ul class="footer-nav__list">
+                            <li>
+                                <img src="icons/home.svg" alt="homepage">
+                                <a href="#">Головна</a>
+                            </li>
+                            <li>
+                                <img src="icons/user.svg" alt="user">
+                                <a href="#">Викладачі</a>
+                            </li>
+                            <li>
+                                <img src="icons/news.svg" alt="news">
+                                <a href="#">Новини та події</a>
+                            </li>
+                            <li>
+                                <img src="icons/partners.svg" alt="partners">
+                                <a href="#">Партнерство</a>
+                            </li>
+                            <li>
+                                <img src="icons/study.svg" alt="study">
+                                <a href="#">Навчання</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <span class="footer-nav__list-title">Студенту</span>
+                        <ul class="footer-nav__list">
+                            <li>
+                                <img src="icons/world-icon.svg" alt="world">
+                                <a href="#">Сайт ХНЕУ</a>
+                            </li>
+                            <li>
+                                <img src="icons/world-icon.svg" alt="world">
+                                <a href="#">Сайт факультету ІТ</a>
+                            </li>
+                            <li>
+                                <img src="icons/website.svg" alt="website">
+                                <a href="#">Сайт ПНС</a>
+                            </li>
+                            <li>
+                                <img src="icons/calendar.svg" alt="calendar">
+                                <a href="#">Розклад занять</a>
+                            </li>
+                            <li>
+                                <img src="icons/calendar.svg" alt="calendar">
+                                <a href="#">Графік консультацій</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <span class="footer-nav__list-title">Ми в соц. мережах</span>
+                        <ul class="footer-nav__list">
+                            <li>
+                                <img src="icons/social/instagram.svg" alt="instagram">
+                                <a href="#">Instagram</a>
+                            </li>
+                            <li>
+                                <img src="icons/social/facebook.svg" alt="facebook">
+                                <a href="#">Facebook</a>
+                            </li>
+                            <li>
+                                <img src="icons/social/youtube.svg" alt="youtube">
+                                <a href="#">YouTube</a>
+                            </li>
+                            <li>
+                                <img src="icons/social/telegram.svg" alt="telegram">
+                                <a href="#">Telegram</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <span class="footer-nav__list-title">Контакти</span>
+                        <ul class="footer-nav__list">
+                            <li>
+                                <img src="icons/location.svg" alt="location">
+                                <a href="#">м. Харків, пр. Науки 9а, головний корп., кімн. 412</a>
+                            </li>
+                            <li>
+                                <img src="icons/phone-call.svg" alt="phone-call">
+                                <a href="tel:+380577021831">+ 38 (057) 702-18-31</a>
+                            </li>
+                            <li>
+                                <img src="icons/mail.svg" alt="mail">
+                                <a href="mailto:kafis@hneu.edu.ua">kafis@hneu.edu.ua</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="site-created-by">Сайт розробили <a href="#">студенти</a> кафедри ІС</div>
         </div>
-        <div class="col">
-            One of three columns
+    </section>
+    <section class="footer-copyright">
+        <div class="container-xl">
+            <span>© ХНЕУ ім. С. Кузнеця, Кафедра інформаційних систем</span>
         </div>
-        <div class="col">
-            One of three columns
-        </div>
-        <div class="col">
-            One of three columns
-        </div>
-        <div class="col">
-            One of three columns
-        </div>
-        <div class="col">
-            One of three columns
-        </div>
-        <div class="col">
-            One of three columns
-        </div>
-        <div class="col">
-            One of three columns
-        </div>
-        <div class="col">
-            One of three columns
-        </div>
-        <div class="col">
-            One of three columns
-        </div>
-        <div class="col">
-            One of three columns
-        </div>
-        <div class="col">
-            One of three columns
-        </div>
-    </div>
-</div>
+    </section>
+</footer>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/libs.min.js"></script>

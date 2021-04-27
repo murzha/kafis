@@ -24,7 +24,7 @@
     "gulp-sourcemaps": "^2.6.5"
   },
   "dependencies": {
-    "bootstrap": "^5.0.0-beta2",
+    "bootstrap": "^5.0.0-beta3",
     "magnific-popup": "^1.1.0",
     "slick-carousel": "^1.8.1"
   },

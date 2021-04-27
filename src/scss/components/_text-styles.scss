@@ -1,0 +1,44 @@
+.section {
+  &-title {
+    @extend %section-title;
+    color: $black-color;
+  }
+
+  &-subtitle {
+    @extend %section-subtitle;
+    color: $black-color;
+  }
+}
+
+.item {
+  &-title {
+    margin: 0;
+    padding: 0;
+    @extend %title-20-semi-bold;
+    color: $primary-color;
+  }
+
+  &-text {
+    margin: 0;
+    padding: 0;
+    @extend %text-16-medium;
+    color: $black-color;
+  }
+
+  &-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    @extend %text-16-medium;
+    color: $black-color;
+
+    li {
+      margin-bottom: 4px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
