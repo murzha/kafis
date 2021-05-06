@@ -1,0 +1,115 @@
+.quality-of-education {
+  margin-top: 208px;
+
+  &__content {
+    position: relative;
+    margin-top: 60px;
+    display: flex;
+    background-color: $light-bg-color;
+
+    &-img {
+      max-width: 50vw;
+      height: 100%;
+      display: flex;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-form {
+      max-width: 50vw;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 40px;
+
+      form {
+        & > :nth-child(n+1) {
+          margin-bottom: 20px;
+        }
+
+        & > :last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .form {
+        &-title {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 32%;
+          padding: 0;
+          margin: 0;
+
+          color: $primary-color;
+          @extend %title-30-semi-bold;
+          max-width: 244px;
+        }
+
+        &-item {
+          label {
+            @extend %text-18-30-medium;
+            color: $black-color;
+            margin-bottom: 4px;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          input, textarea {
+            border: 1px solid $black-color;
+            background-color: $white-color;
+            box-shadow: none;
+            outline: none;
+            border-radius: 0;
+            margin: 0;
+            padding: 6px;
+            width: 100%;
+
+            @extend %text-18-30-medium;
+            color: $black-color;
+
+            &:active, &:focus {
+              border-color: $primary-color;
+              box-shadow: none;
+              border-radius: 0;
+              outline: none;
+            }
+          }
+
+          input {
+            height: 36px;
+          }
+
+          textarea {
+            height: 180px;
+          }
+        }
+
+        &-btn {
+          height: 40px;
+          background-color: $primary-color;
+          width: 100%;
+          border: 0;
+          outline: none;
+          box-shadow: none;
+
+          @extend %text-18-30-medium;
+          color: $white-color;
+
+          &:hover {
+            cursor: pointer;
+            background-color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+}

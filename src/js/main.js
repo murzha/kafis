@@ -1,5 +1,5 @@
 $('.homepage-main__slider').slick({
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 7000,
     dots: false,
     arrows: false,
@@ -13,10 +13,18 @@ function scrollTo(element) {
     })
 }
 
-let button = document.querySelector('.homepage-main__more-info__link')
-let footer = document.querySelector('.our-advantages')
+if (document.querySelector('.homepage-main__more-info__link')) {
+    let button = document.querySelector('.homepage-main__more-info__link')
+    let footer = document.querySelector('.our-advantages')
 
-button.addEventListener('click', (event) => {
-    event.preventDefault()
-    scrollTo(footer);
-})
+    button.addEventListener('click', (event) => {
+        event.preventDefault()
+        scrollTo(footer);
+    })
+}
+
+window.onload = function () {
+    setInterval(function thing() {
+        document.getElementById("loader").style.display = 'none';
+    }, 1200);
+};

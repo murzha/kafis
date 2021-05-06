@@ -153,7 +153,12 @@
 
     .item-text {
       margin: 10px 0 0;
-      text-align: center;
+      text-align: justify;
+
+      p {
+        margin: 0;
+        padding: 0;
+      }
     }
   }
 
@@ -237,7 +242,7 @@
           top: 50%;
           transform: translateY(-50%);
           height: 20px;
-          content: url(../../icons/checkmarks/checkmark-yellow.svg);
+          content: url("../../icons/checkmarks/checkmark-yellow.svg");;
         }
       }
     }
@@ -311,7 +316,7 @@
               top: 50%;
               transform: translateY(-50%);
               height: 20px;
-              content: url(../../icons/checkmarks/checkmark-red.svg);
+              content: url("../../icons/checkmarks/checkmark-red.svg");
             }
           }
         }
@@ -360,7 +365,7 @@
 
         &-text {
           margin-top: 10px;
-          text-align: center;
+          text-align: justify;
 
           &-content {
             margin-bottom: 20px;
