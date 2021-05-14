@@ -1,30 +1,60 @@
-$('.homepage-main__slider').slick({
-    autoplay: true,
-    autoplaySpeed: 7000,
-    dots: false,
-    arrows: false,
-})
+jQuery(document).ready(function ($) {
+    //Loader
+    setTimeout(function () {
+        $('#loader').fadeOut('fast');
+    }, 1000);
 
-function scrollTo(element) {
-    window.scroll({
-        left: 0,
-        top: element.offsetTop - 240,
-        behavior: 'smooth'
+    //Scroll to Block 'our-advantages'
+    $(".homepage-main__more-info__link").click(function () {
+        $('html,body').animate({
+            scrollTop: $(".our-advantages").offset().top - 240
+        }, 1000);
+
+    });
+
+    // Sliders
+    $('.homepage-main__slider').slick({
+        autoplay: true,
+        autoplaySpeed: 7000,
+        dots: false,
+        arrows: false,
     })
-}
 
-if (document.querySelector('.homepage-main__more-info__link')) {
-    let button = document.querySelector('.homepage-main__more-info__link')
-    let footer = document.querySelector('.our-advantages')
+    $('.our-partners__items-wrapper').slick({
+        rows: 2,
+        dots: false,
+        arrows: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3200,
+        slidesToShow: 4,
+        slidesToScroll: 2
+    });
 
-    button.addEventListener('click', (event) => {
-        event.preventDefault()
-        scrollTo(footer);
-    })
-}
+    $('.our-graduates__items-wrapper').slick({
+        rows: 2,
+        dots: false,
+        arrows: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 4400,
+        slidesToShow: 3,
+        slidesToScroll: 2
+    });
+    //End Sliders
 
-window.onload = function () {
-    setInterval(function thing() {
-        document.getElementById("loader").style.display = 'none';
-    }, 1200);
-};
+    //Scroll to top Btn
+    $(window).scroll(function () {
+        if ($(this).scrollTop() >= 50) {
+            $('#return-to-top').fadeIn(200);
+        } else {
+            $('#return-to-top').fadeOut(200);
+        }
+    });
+
+    $('#return-to-top').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+    });
+});

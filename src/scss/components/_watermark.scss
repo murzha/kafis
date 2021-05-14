@@ -26,4 +26,15 @@
       height: 226px;
     }
   }
+
+  &__international-programs {
+    position: absolute;
+    right: 0;
+    top: 174px;
+    z-index: 1;
+
+    img {
+      height: 370px;
+    }
+  }
 }
