@@ -20,9 +20,11 @@ main {
 }
 
 @import "blocks/header";
+@import "blocks/menu";
 @import "blocks/footer";
 
 @import "components/text-styles";
+@import "components/item-style";
 @import "components/watermark";
 @import "components/main-content-wrapper";
 @import "components/pagination";

@@ -20,74 +20,278 @@
 
 <header class="header">
     <section class="header-feed">
-        <div class="container-xl">
-            <div class="header-feed__left">
-                <a href="#" class="header-feed__logo">
-                    <img src="img/logo.svg" alt="logo">
-                </a>
-            </div>
-            <div class="header-feed__right">
-                <div class="header-feed__contacts">
-                    <div class="header-feed__contacts-item">
-                        <img src="icons/phone-call.svg" alt="phone-call">
-                        <a href="tel:+380577021831">+ 38 (057) 702-18-31</a>
-                    </div>
-                    <div class="header-feed__contacts-item">
-                        <img src="icons/mail.svg" alt="phone-call">
-                        <a href="mailto:kafis@hneu.edu.ua">kafis@hneu.edu.ua</a>
-                    </div>
+        <div class="container">
+            <div class="header-feed__container">
+                <div class="header-feed__left">
+                    <a href="#" class="header-feed__logo">
+                        <img src="img/logo.svg" alt="logo">
+                    </a>
                 </div>
-                <div class="header-feed__social">
-                    <ul>
-                        <li>
-                            <a href="#"><img src="icons/social/instagram.svg" alt="instagram"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="icons/social/facebook.svg" alt="facebook"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="icons/social/youtube.svg" alt="youtube"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="icons/social/telegram.svg" alt="telegram"></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="header-feed__language">
-                    <img src="icons/world-icon.svg" alt="world">
-                    <span>UKR</span>
-                    <img src="icons/caret-down.svg" alt="caret-down">
+                <div class="header-feed__right">
+                    <div class="header-feed__contacts">
+                        <div class="header-feed__contacts-item">
+                            <img src="icons/phone-call.svg" alt="phone-call">
+                            <a href="tel:+380577021831">+ 38 (057) 702-18-31</a>
+                        </div>
+                        <div class="header-feed__contacts-item">
+                            <img src="icons/mail.svg" alt="phone-call">
+                            <a href="mailto:kafis@hneu.edu.ua">kafis@hneu.edu.ua</a>
+                        </div>
+                    </div>
+                    <div class="header-feed__social">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="icons/social/instagram.svg" alt="instagram"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="icons/social/facebook.svg" alt="facebook"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="icons/social/youtube.svg" alt="youtube"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="icons/social/telegram.svg" alt="telegram"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-feed__language">
+                        <img src="icons/world-icon.svg" alt="world">
+                        <span>UKR</span>
+                        <img src="icons/caret-down.svg" alt="caret-down">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="header-nav">
-        <div class="container-xl">
-            <ul class="header-nav__menu">
-                <li class="header-nav__menu-item active">
-                    <a href="#">Головна</a>
-                </li>
-                <li class="header-nav__menu-item">
-                    <a href="#">Викладачі</a>
-                </li>
-                <li class="header-nav__menu-item">
-                    <a href="#">Новини та події</a>
-                </li>
-                <li class="header-nav__menu-item">
-                    <a href="#">Партнерство</a>
-                </li>
-                <li class="header-nav__menu-item">
-                    <a href="#">Навчання</a>
-                </li>
-                <li class="header-nav__menu-item">
-                    <a href="#">Контакти</a>
-                </li>
-            </ul>
-            <div class="header-nav__search">
-                <a href="" class="search-btn">
-                    <img src="icons/search.svg" alt="search">
-                    <span>Пошук</span>
-                </a>
+        <div class="container">
+            <div class="header-nav__container">
+                <div class="header-nav__menu">
+                    <div class="menu">
+                        <div class="menu__substrate"></div>
+                        <div class="menu__items-container">
+                            <ul class="menu__items">
+                                <li class="menu__link"><a href="#">Головна</a></li>
+                                <li class="menu__link"><a href="#">Викладачі</a></li>
+                                <li class="menu__link dropdown">
+                                    <a href="#" class="dropdown-link">
+                                        <span>Навчання</span>
+                                    </a>
+                                    <ul class="dropdown-content">
+                                        <li class="dropdown-item menu__link dropdown">
+                                            <a href="#" class="dropdown-link">
+                                                <span>Бакалавр</span>
+                                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0)">
+                                                        <path d="M7.8497 5.00003C7.8497 5.17925 7.78127 5.35845 7.6447 5.49508L3.34488 9.79486C3.07135 10.0684 2.62788 10.0684 2.35447 9.79486C2.08106 9.52145 2.08106 9.07807 2.35447 8.80452L6.15919 5.00003L2.35461 1.19551C2.08119 0.921988 2.08119 0.478652 2.35461 0.205263C2.62802 -0.0683908 3.07149 -0.0683908 3.34501 0.205263L7.64483 4.50497C7.78143 4.64168 7.8497 4.82087 7.8497 5.00003Z"
+                                                              fill="#474747"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0">
+                                                            <rect width="10" height="10" fill="white"
+                                                                  transform="translate(0 10) rotate(-90)"/>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </a>
+                                            <ul class="dropdown-content submenu">
+                                                <li class="dropdown-item menu__link"><a href="#">121 Інженерія
+                                                    програмного
+                                                    забезпечення</a></li>
+                                                <li class="dropdown-item menu__link"><a href="#">122 Комп’ютерні
+                                                    науки</a></li>
+                                                <li class="dropdown-item menu__link"><a href="#">126 Інформаційні
+                                                    системи та
+                                                    технології</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown-item menu__link dropdown">
+                                            <a href="#" class="dropdown-link">
+                                                <span>Магістр</span>
+                                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0)">
+                                                        <path d="M7.8497 5.00003C7.8497 5.17925 7.78127 5.35845 7.6447 5.49508L3.34488 9.79486C3.07135 10.0684 2.62788 10.0684 2.35447 9.79486C2.08106 9.52145 2.08106 9.07807 2.35447 8.80452L6.15919 5.00003L2.35461 1.19551C2.08119 0.921988 2.08119 0.478652 2.35461 0.205263C2.62802 -0.0683908 3.07149 -0.0683908 3.34501 0.205263L7.64483 4.50497C7.78143 4.64168 7.8497 4.82087 7.8497 5.00003Z"
+                                                              fill="#474747"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0">
+                                                            <rect width="10" height="10" fill="white"
+                                                                  transform="translate(0 10) rotate(-90)"/>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </a>
+                                            <ul class="dropdown-content submenu">
+                                                <li class="dropdown-item menu__link"><a href="#">122 Комп’ютерні
+                                                    науки</a></li>
+                                                <li class="dropdown-item menu__link"><a href="#">126 Інформаційні
+                                                    системи та технології</a></li>
+                                                <li class="dropdown-item menu__link"><a href="#">Франко-українська
+                                                    програма</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-item menu__link dropdown">
+                                            <a href="#">
+                                                <span>Якість навчання</span>
+                                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0)">
+                                                        <path d="M7.8497 5.00003C7.8497 5.17925 7.78127 5.35845 7.6447 5.49508L3.34488 9.79486C3.07135 10.0684 2.62788 10.0684 2.35447 9.79486C2.08106 9.52145 2.08106 9.07807 2.35447 8.80452L6.15919 5.00003L2.35461 1.19551C2.08119 0.921988 2.08119 0.478652 2.35461 0.205263C2.62802 -0.0683908 3.07149 -0.0683908 3.34501 0.205263L7.64483 4.50497C7.78143 4.64168 7.8497 4.82087 7.8497 5.00003Z"
+                                                              fill="#474747"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0">
+                                                            <rect width="10" height="10" fill="white"
+                                                                  transform="translate(0 10) rotate(-90)"/>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </a>
+                                            <ul class="dropdown-content submenu">
+                                                <li class="dropdown-item menu__link dropdown">
+                                                    <a href="#" class="dropdown-link">
+                                                        <span>Освітньо-професійна програма</span>
+                                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0)">
+                                                                <path d="M7.8497 5.00003C7.8497 5.17925 7.78127 5.35845 7.6447 5.49508L3.34488 9.79486C3.07135 10.0684 2.62788 10.0684 2.35447 9.79486C2.08106 9.52145 2.08106 9.07807 2.35447 8.80452L6.15919 5.00003L2.35461 1.19551C2.08119 0.921988 2.08119 0.478652 2.35461 0.205263C2.62802 -0.0683908 3.07149 -0.0683908 3.34501 0.205263L7.64483 4.50497C7.78143 4.64168 7.8497 4.82087 7.8497 5.00003Z"
+                                                                      fill="#474747"/>
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0">
+                                                                    <rect width="10" height="10" fill="white"
+                                                                          transform="translate(0 10) rotate(-90)"/>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                    </a>
+                                                    <ul class="dropdown-content submenu">
+                                                        <li class="dropdown-item menu__link dropdown">
+                                                            <a href="#" class="dropdown-link">
+                                                                <span>Бакалавр</span>
+                                                                <svg width="10" height="10" viewBox="0 0 10 10"
+                                                                     fill="none"
+                                                                     xmlns="http://www.w3.org/2000/svg">
+                                                                    <g clip-path="url(#clip0)">
+                                                                        <path d="M7.8497 5.00003C7.8497 5.17925 7.78127 5.35845 7.6447 5.49508L3.34488 9.79486C3.07135 10.0684 2.62788 10.0684 2.35447 9.79486C2.08106 9.52145 2.08106 9.07807 2.35447 8.80452L6.15919 5.00003L2.35461 1.19551C2.08119 0.921988 2.08119 0.478652 2.35461 0.205263C2.62802 -0.0683908 3.07149 -0.0683908 3.34501 0.205263L7.64483 4.50497C7.78143 4.64168 7.8497 4.82087 7.8497 5.00003Z"
+                                                                              fill="#474747"/>
+                                                                    </g>
+                                                                    <defs>
+                                                                        <clipPath id="clip0">
+                                                                            <rect width="10" height="10" fill="white"
+                                                                                  transform="translate(0 10) rotate(-90)"/>
+                                                                        </clipPath>
+                                                                    </defs>
+                                                                </svg>
+                                                            </a>
+                                                            <ul class="dropdown-content submenu">
+                                                                <li class="dropdown-item menu__link">
+                                                                    <a href="#">121 Інженерія програмного
+                                                                        забезпечення</a>
+                                                                </li>
+                                                                <li class="dropdown-item menu__link">
+                                                                    <a href="#">122 Комп’ютерні науки</a>
+                                                                </li>
+                                                                <li class="dropdown-item menu__link">
+                                                                    <a href="#">126 Інформаційні системи та
+                                                                        технології</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="dropdown-item menu__link dropdown">
+                                                            <a href="#" class="dropdown-link">
+                                                                <span>Магістр</span>
+                                                                <svg width="10" height="10" viewBox="0 0 10 10"
+                                                                     fill="none"
+                                                                     xmlns="http://www.w3.org/2000/svg">
+                                                                    <g clip-path="url(#clip0)">
+                                                                        <path d="M7.8497 5.00003C7.8497 5.17925 7.78127 5.35845 7.6447 5.49508L3.34488 9.79486C3.07135 10.0684 2.62788 10.0684 2.35447 9.79486C2.08106 9.52145 2.08106 9.07807 2.35447 8.80452L6.15919 5.00003L2.35461 1.19551C2.08119 0.921988 2.08119 0.478652 2.35461 0.205263C2.62802 -0.0683908 3.07149 -0.0683908 3.34501 0.205263L7.64483 4.50497C7.78143 4.64168 7.8497 4.82087 7.8497 5.00003Z"
+                                                                              fill="#474747"/>
+                                                                    </g>
+                                                                    <defs>
+                                                                        <clipPath id="clip0">
+                                                                            <rect width="10" height="10" fill="white"
+                                                                                  transform="translate(0 10) rotate(-90)"/>
+                                                                        </clipPath>
+                                                                    </defs>
+                                                                </svg>
+                                                            </a>
+                                                            <ul class="dropdown-content submenu">
+                                                                <li class="dropdown-item menu__link">
+                                                                    <a href="#">122 Комп’ютерні науки</a>
+                                                                </li>
+                                                                <li class="dropdown-item menu__link">
+                                                                    <a href="#">126 Інформаційні системи та
+                                                                        технології</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown-item menu__link"><a href="#">Заходи</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__link"><a href="#">Новини та події</a></li>
+                                <li class="menu__link dropdown">
+                                    <a href="#" class="dropdown-link">
+                                        <span>Партнерство</span>
+                                    </a>
+                                    <ul class="dropdown-content">
+                                        <li class="dropdown-item menu__link">
+                                            <a href="#" class="dropdown-link">IT бізнес</a>
+                                        </li>
+                                        <li class="dropdown-item menu__link dropdown">
+                                            <a href="#" class="dropdown-link">
+                                                <span>Міжнародне</span>
+                                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0)">
+                                                        <path d="M7.8497 5.00003C7.8497 5.17925 7.78127 5.35845 7.6447 5.49508L3.34488 9.79486C3.07135 10.0684 2.62788 10.0684 2.35447 9.79486C2.08106 9.52145 2.08106 9.07807 2.35447 8.80452L6.15919 5.00003L2.35461 1.19551C2.08119 0.921988 2.08119 0.478652 2.35461 0.205263C2.62802 -0.0683908 3.07149 -0.0683908 3.34501 0.205263L7.64483 4.50497C7.78143 4.64168 7.8497 4.82087 7.8497 5.00003Z"
+                                                              fill="#474747"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0">
+                                                            <rect width="10" height="10" fill="white"
+                                                                  transform="translate(0 10) rotate(-90)"/>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </a>
+                                            <ul class="dropdown-content submenu">
+                                                <li class="dropdown-item menu__link"><a href="#">IBM</a></li>
+                                                <li class="dropdown-item menu__link"><a href="#">Erasmus+MASTIS</a></li>
+                                                <li class="dropdown-item menu__link"><a href="#">Erasmus+DocHUB</a></li>
+                                                <li class="dropdown-item menu__link"><a href="#">Erasmus+FABLAB</a></li>
+                                                <li class="dropdown-item menu__link"><a href="#">Horizon 2020
+                                                    EQUAL-IST</a></li>
+                                                <li class="dropdown-item menu__link"><a href="#">C3QA Erasmus+</a></li>
+                                                <li class="dropdown-item menu__link"><a href="#">EDUQUAS</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__link"><a href="#">Контакти</a></li>
+                            </ul>
+                            <div class="menu__hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-nav__search">
+                    <a href="#" class="search-btn">
+                        <img src="icons/search.svg" alt="search">
+                        <span>Пошук</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -100,7 +304,7 @@
             <img src="img/main-page/main-section/main-section.jpg" alt="image"/>
         </div>
         <div class="homepage-main__text-wrapper">
-            <div class="container-xl">
+            <div class="container homepage-main__text-container">
                 <div class="homepage-main__text">
                     <h1>Кафедра інформаційних систем</h1>
                     <h2>ХНЕУ ім. Семена Кузнеця</h2>
@@ -116,7 +320,7 @@
     </section>
 
     <section class="our-advantages">
-        <div class="container-xl">
+        <div class="container">
             <div class="homepage-title">
                 <h3 class="section-subtitle">Наші</h3>
                 <h2 class="section-title">Переваги</h2>
@@ -172,7 +376,7 @@
         <div class="watermark__what-we-study">
             <img src="img/grayscale-images/first.png" alt="grayscale-image">
         </div>
-        <div class="container-xl">
+        <div class="container">
             <div class="homepage-title">
                 <h3 class="section-subtitle">Що ми</h3>
                 <h2 class="section-title">вивчаємо</h2>
@@ -290,7 +494,7 @@
         <div class="we-propose__section-content">
             <div class="we-propose__text">
                 <div class="row">
-                    <div class="col-9">
+                    <div class="cl-lg-10 col-xl-9">
                         <div class="homepage-title">
                             <h3 class="section-subtitle">Що ми пропонуємо</h3>
                             <h2 class="section-title">Нашим студентам</h2>
@@ -313,7 +517,7 @@
     </section>
 
     <section class="future-professions homepage-mt">
-        <div class="container-xl">
+        <div class="container">
             <div class="homepage-title">
                 <h3 class="section-subtitle">Наші студенти</h3>
                 <h2 class="section-title">здобувають такі професії</h2>
@@ -384,7 +588,7 @@
     </section>
 
     <section class="specialties homepage-mt">
-        <div class="container-xl">
+        <div class="container">
             <div class="homepage-title">
                 <h3 class="section-subtitle">Ми готуемо студентів за</h3>
                 <h2 class="section-title">спеціальностями</h2>
@@ -407,7 +611,11 @@
                             <div class="read-more">
                                 <a href="#">
                                     <span>Детальніше</span>
-                                    <img src="icons/arrows/arrow-red.svg" alt="arrow">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 3L7.9425 4.0575L12.1275 8.25H3V9.75H12.1275L7.9425 13.9425L9 15L15 9L9 3Z"
+                                              fill="#B1040E"/>
+                                    </svg>
                                 </a>
                             </div>
                         </div>
@@ -430,7 +638,11 @@
                             <div class="read-more">
                                 <a href="#">
                                     <span>Детальніше</span>
-                                    <img src="icons/arrows/arrow-red.svg" alt="arrow">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 3L7.9425 4.0575L12.1275 8.25H3V9.75H12.1275L7.9425 13.9425L9 15L15 9L9 3Z"
+                                              fill="#B1040E"/>
+                                    </svg>
                                 </a>
                             </div>
                         </div>
@@ -451,7 +663,11 @@
                             <div class="read-more">
                                 <a href="#">
                                     <span>Детальніше</span>
-                                    <img src="icons/arrows/arrow-red.svg" alt="arrow">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 3L7.9425 4.0575L12.1275 8.25H3V9.75H12.1275L7.9425 13.9425L9 15L15 9L9 3Z"
+                                              fill="#B1040E"/>
+                                    </svg>
                                 </a>
                             </div>
                         </div>
@@ -462,7 +678,7 @@
     </section>
 
     <section class="international-programs homepage-mt">
-        <div class="container-xl">
+        <div class="container">
             <div class="homepage-title">
                 <h3 class="section-subtitle">Наша кафедра пропонує студентам такі</h3>
                 <h2 class="section-title">Міжнародні програми</h2>
@@ -471,8 +687,8 @@
                 <div class="row">
                     <div class="col-4">
                         <div class="international-programs__item">
-                            <div class="item-icon__wrapper">
-                                <div class="item-icon">
+                            <div class="international-programs__image">
+                                <div class="international-programs__image-wrapper">
                                     <img src="img/main-page/international-programs/france-lyon.png"
                                          alt="france-lyon">
                                 </div>
@@ -491,15 +707,19 @@
                             <div class="read-more">
                                 <a href="#">
                                     <span>Детальніше</span>
-                                    <img src="icons/arrows/arrow-red.svg" alt="arrow">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 3L7.9425 4.0575L12.1275 8.25H3V9.75H12.1275L7.9425 13.9425L9 15L15 9L9 3Z"
+                                              fill="#B1040E"/>
+                                    </svg>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="international-programs__item">
-                            <div class="item-icon__wrapper">
-                                <div class="item-icon">
+                            <div class="international-programs__image">
+                                <div class="international-programs__image-wrapper">
                                     <img src="img/main-page/international-programs/slovenska.png"
                                          alt="slovenska">
                                 </div>
@@ -519,7 +739,11 @@
                             <div class="read-more">
                                 <a href="#">
                                     <span>Детальніше</span>
-                                    <img src="icons/arrows/arrow-red.svg" alt="arrow">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 3L7.9425 4.0575L12.1275 8.25H3V9.75H12.1275L7.9425 13.9425L9 15L15 9L9 3Z"
+                                              fill="#B1040E"/>
+                                    </svg>
                                 </a>
                             </div>
                         </div>
@@ -533,7 +757,7 @@
     </section>
 
     <section class="our-graduates homepage-mt">
-        <div class="container-xl">
+        <div class="container">
             <div class="homepage-title">
                 <h3 class="section-subtitle">Наші</h3>
                 <h2 class="section-title">випускники</h2>
@@ -575,7 +799,7 @@
     </section>
 
     <section class="our-partners homepage-mt">
-        <div class="container-xl">
+        <div class="container">
             <div class="homepage-title">
                 <h3 class="section-subtitle">Наші</h3>
                 <h2 class="section-title">Партнери</h2>
@@ -696,7 +920,7 @@
                 </div>
             </div>
             <div class="final-quote__text-wrapper">
-                <div class="container-xl final-quote__text-container">
+                <div class="container final-quote__text-container">
                     <div class="final-quote__text">
                         <h2>Молодь обирає тільки найсучасніші технології, вона обирає кафедру Інформаційних систем!</h2>
                     </div>
@@ -708,7 +932,7 @@
 
 <footer class="footer">
     <section class="footer-main">
-        <div class="container-xl">
+        <div class="container">
             <div class="footer-nav">
                 <div class="row">
                     <div class="col-lg-3">
@@ -805,13 +1029,17 @@
         </div>
     </section>
     <section class="footer-copyright">
-        <div class="container-xl">
+        <div class="container">
             <span>© ХНЕУ ім. С. Кузнеця, Кафедра інформаційних систем</span>
         </div>
     </section>
 </footer>
 
-<button id="return-to-top" class="return-to-top"><img src="icons/arrows/arrow-white.svg" alt="arrow"></button>
+<button id="return-to-top" class="return-to-top">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 3L7.9425 4.0575L12.1275 8.25H3V9.75H12.1275L7.9425 13.9425L9 15L15 9L9 3Z" fill="#FFFDFD"/>
+    </svg>
+</button>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/jquery-3.6.0.min.js"></script>

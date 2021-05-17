@@ -19,11 +19,19 @@
   &__what-we-study {
     position: absolute;
     right: 0;
-    top: -80px;
+    top: -40px;
 
     img {
-      width: 339px;
       height: 226px;
+      object-fit: contain;
+
+      @media (max-width: 1500px) {
+        height: 190px;
+      }
+
+      @media (max-width: 1199px) {
+        display: none;
+      }
     }
   }
 
@@ -35,6 +43,15 @@
 
     img {
       height: 370px;
+      object-fit: contain;
+
+      @media (max-width: 1500px) {
+        height: 340px;
+      }
+
+      @media (max-width: 1199px) {
+        display: none;
+      }
     }
   }
 }

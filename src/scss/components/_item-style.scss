@@ -1,0 +1,57 @@
+.item {
+  &-title {
+    margin: 0;
+    padding: 0;
+    @extend %title-20-semi-bold;
+    color: $primary-color;
+
+    @media (max-width: 1199px) {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  &-text {
+    margin: 0;
+    padding: 0;
+    @extend %text-16-medium;
+    color: $black-color;
+
+    @media (max-width: 1199px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    @extend %text-16-medium;
+    color: $black-color;
+
+    @media (max-width: 1199px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    li {
+      margin-bottom: 4px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &-icon{
+    width: 100px;
+    height: 100px;
+
+    @media (max-width: 1199px) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
