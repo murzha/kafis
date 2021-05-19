@@ -1,0 +1,141 @@
+.we-propose {
+  background-color: $light-bg-color;
+  display: flex;
+
+  &__section {
+    &-img {
+      width: 45vw;
+      height: auto;
+
+      @media (max-width: 767px) {
+        width: 0;
+        display: none;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-content {
+      position: relative;
+      width: 55vw;
+      height: auto;
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 767px) {
+        width: auto;
+      }
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 0 70px 110px;
+
+    @media (max-width: 1400px) {
+      padding: 50px 0 50px 80px;
+    }
+
+    @media (max-width: 1199px) {
+      padding: 60px;
+    }
+
+    @media (max-width: 991px) {
+      padding: 40px 30px;
+    }
+
+    @media (max-width: 767px) {
+      padding: 40px 0;
+    }
+  }
+
+  &__items-list {
+    list-style: none;
+    margin: 20px 0 0;
+    padding: 0;
+    @extend %text-16-medium;
+    color: $black-color;
+
+    @media (max-width: 1199px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    @media (max-width: 991px) {
+      margin: 10px 0 0;
+    }
+
+    li {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 12px;
+
+      @media (max-width: 1199px) {
+        padding-left: 24px;
+      }
+
+      @media (max-width: 991px) {
+        margin-bottom: 8px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:before {
+        position: absolute;
+        left: 1px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        content: "";
+        background: url("../../../icons/checkmarks/checkmark-yellow.svg") no-repeat 0 0;
+        background-size: 100%;
+
+        @media (max-width: 1199px) {
+          height: 16px;
+          width: 16px;
+        }
+      }
+    }
+  }
+
+  &__watermark {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media (max-width: 767px) {
+      right: 0;
+      margin: 0 auto;
+    }
+
+    img {
+      height: 374px;
+      object-fit: contain;
+
+      @media (max-width: 1500px) {
+        height: 320px;
+      }
+
+      @media (max-width: 1199px) {
+        display: none;
+      }
+
+      //@media (max-width: 767px) {
+      //  display: block;
+      //  height: 220px;
+      //}
+    }
+  }
+}

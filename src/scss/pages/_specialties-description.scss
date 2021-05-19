@@ -1,13 +1,54 @@
 .specialty {
   &-title {
     margin: 0;
+    text-align: justify;
     @extend %title-30-semi-bold;
     color: $primary-color;
 
-    &__img{
+    @media (max-width: 1199px) {
+      font-size: 26px;
+      line-height: 36px;
+    }
+
+    @media (max-width: 991px) {
+      font-size: 24px;
+      line-height: 34px;
+    }
+
+    @media (max-width: 767px) {
+      margin-top: 20px;
+      font-size: 22px;
+      line-height: 32px;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    &__img {
       width: 100%;
       height: 150px;
       object-fit: cover;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  &-content {
+    &__header {
+      &-row {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 767px) {
+          flex-direction: column-reverse;
+        }
+      }
     }
   }
 
@@ -18,6 +59,16 @@
 
     @extend %text-18-30-medium;
     color: $black-color;
+
+    @media (max-width: 1199px) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
 
     li {
       margin-bottom: 10px;
@@ -31,6 +82,16 @@
       @extend %text-18-30-medium;
       color: $black-color;
 
+      @media (max-width: 1199px) {
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 20px;
+      }
+
       &:hover {
         color: $primary-color;
       }
@@ -40,18 +101,42 @@
   &-description {
     margin-top: 40px;
 
+    @media (max-width: 767px) {
+      margin-top: 30px;
+    }
+
     &__title {
       @extend %title-20-semi-bold;
       color: $primary-color;
+
+      @media (max-width: 1199px) {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 20px;
+      }
     }
 
     &__list {
       list-style: none;
       padding: 0;
       margin: 20px 0 0;
+      text-align: justify;
 
       @extend %text-18-24-medium;
       color: $black-color;
+
+      @media (max-width: 1199px) {
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 20px;
+      }
 
       li {
         margin-bottom: 20px;
@@ -64,6 +149,14 @@
 
         img {
           margin-right: 12px;
+          width: 20px;
+          height: 20px;
+
+          @media (max-width: 1199px) {
+            margin-right: 8px;
+            width: 18px;
+            height: 18px;
+          }
         }
       }
     }

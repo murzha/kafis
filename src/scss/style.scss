@@ -33,7 +33,18 @@ main {
 @import "components/loader";
 @import "components/return-to-top";
 
-@import "pages/homepage";
+@import "pages/homepage/homepage";
+@import "pages/homepage/hp-main-section";
+@import "pages/homepage/hp-our-advantages";
+@import "pages/homepage/hp-what-we-study";
+@import "pages/homepage/hp-we-propose";
+@import "pages/homepage/hp-future-professions";
+@import "pages/homepage/hp-specialties";
+@import "pages/homepage/hp-international-programs";
+@import "pages/homepage/hp-our-graduates";
+@import "pages/homepage/hp-our-partners";
+@import "pages/homepage/hp-final-quote";
+
 @import "pages/specialties-description";
 @import "pages/news";
 @import "pages/news-single";

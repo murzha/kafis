@@ -1,0 +1,61 @@
+.what-we-study {
+  position: relative;
+
+  &__items {
+    //.what-we-study__item-col:nth-child(n+3) {
+    //  margin-top: 60px;
+    //
+    //  @media (max-width: 767px) {
+    //    margin-top: 40px;
+    //  }
+    //}
+
+    &-row {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+
+    &-col {
+      &:nth-child(n+3) {
+        margin-top: 60px;
+        @media (max-width: 767px) {
+          margin-top: 40px;
+        }
+      }
+
+      @media (max-width: 575px) {
+        &:nth-child(n+2) {
+          margin-top: 30px;
+        }
+      }
+    }
+
+    @media (max-width: 991px) {
+      margin-left: 0;
+    }
+
+    .item {
+      &-text-content {
+        margin-left: 50px;
+
+        @media (max-width: 1199px) {
+          margin-left: 34px;
+        }
+
+        @media (max-width: 991px) {
+          margin-left: 20px;
+        }
+      }
+
+      &-list {
+        margin-top: 10px;
+      }
+    }
+  }
+}

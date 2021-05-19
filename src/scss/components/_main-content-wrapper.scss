@@ -1,4 +1,8 @@
 .main-content-wrapper {
   position: relative;
   margin: 208px 0 60px 0;
+
+  @media (max-width: 767px) {
+    margin-top: 148px;
+  }
 }
