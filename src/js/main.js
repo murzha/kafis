@@ -91,31 +91,15 @@ jQuery(document).ready(function ($) {
         }
     )
 
-
+    //Mobile menu
     let hamburger = $('.menu__hamburger');
-    let menuItems = $('.menu__items');
-    let menuSubstrate = $('.menu__substrate');
-    let navBar = $('.nav');
-    // let logo = $('.menu__logo');
 
     hamburger.on('click', function () {
-        // let position = logo.offset().left;
-        // menuItems.css('padding-left', position + 'px');
         if (hamburger.hasClass('menu__hamburger-active')) {
-            // navBar.removeClass('nav__menu-active');
             hamburger.removeClass('menu__hamburger-active');
-            // menuSubstrate.removeClass('menu__substrate-active');
-            // menuItems.removeClass('menu__items__active');
-            // // logo.removeClass('menu__logo-active');
-            // $('body').removeClass('disable-scroll');
 
         } else {
-            // navBar.addClass('nav__menu-active');
             hamburger.addClass('menu__hamburger-active');
-            // menuSubstrate.addClass('menu__substrate-active');
-            // menuItems.addClass('menu__items__active');
-            // // logo.addClass('menu__logo-active');
-            // $('body').addClass('disable-scroll');
         }
     });
 })

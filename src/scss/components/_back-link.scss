@@ -7,13 +7,23 @@
     @extend %text-16-medium;
     color: $black-color;
 
-    img {
+    svg {
       transform: rotate(-180deg);
       margin-right: 6px;
     }
 
     &:hover {
       color: $secondary-color;
+    }
+
+    @media (max-width: 991px) {
+      font-size: 14px;
+      line-height: 20px;
+
+      svg{
+        height: 16px;
+        width: 16px;
+      }
     }
   }
 }

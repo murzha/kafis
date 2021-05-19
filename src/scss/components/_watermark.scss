@@ -29,6 +29,18 @@
   &-bottom-page {
     bottom: 0;
     top: auto;
+
+    img {
+      height: 200px;
+
+      @media (max-width: 1600px) {
+        height: 180px;
+      }
+
+      @media (max-width: 1500px) {
+        display: none;
+      }
+    }
   }
 
   &__what-we-study {
