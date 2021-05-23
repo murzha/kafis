@@ -134,6 +134,10 @@
           }
         }
       }
+
+      @media (max-width: 374px) {
+        display: none;
+      }
     }
 
     &__language {
