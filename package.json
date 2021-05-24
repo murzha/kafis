@@ -26,7 +26,7 @@
     "normalize.css": "^8.0.1"
   },
   "dependencies": {
-    "bootstrap": "^5.0.0-beta3",
+    "bootstrap": "^5.0.1",
     "magnific-popup": "^1.1.0",
     "slick-carousel": "^1.8.1"
   },
