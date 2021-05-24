@@ -1,41 +1,62 @@
 .news {
 
   &-items {
-    .news-item{
+    @media (max-width: 991px) {
       margin-bottom: 40px;
     }
-  }
 
-  &-content {
-
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 
   &-item {
     background-color: $light-bg-color;
     max-width: 100%;
-    display: flex;
 
-    &__img {
-      height: 280px;
-      max-height: 280px;
-      width: 428px;
-      max-width: 428px;
-    }
+    &__col {
+      margin-bottom: 40px;
 
-    &__content {
-      &-left {
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
+      @media (max-width: 991px) {
+        margin-bottom: 18px;
+
+        &:nth-last-child(-n+2) {
+          margin-bottom: 0;
         }
       }
 
-      &-right {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 30px;
+      @media (max-width: 767px) {
+        margin-bottom: 30px;
+
+        &:nth-last-child(2) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    &__img {
+      height: 100%;
+      width: 100%;
+
+      @media (max-width: 991px) {
+        height: 240px;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 30px 30px 30px 14px;
+
+      @media (max-width: 991px) {
+        padding: 20px;
       }
     }
 
@@ -43,10 +64,22 @@
       padding: 0;
       margin: 0 0 12px;
 
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 620px;
+      color: $primary-color;
+      font-size: 18px;
+
       a {
         @extend %title-20-semi-bold;
         color: $primary-color;
         text-decoration: none;
+
+        @media (max-width: 991px) {
+          font-size: 16px;
+          line-height: 20px;
+        }
 
         &:hover {
           color: $secondary-color;
@@ -59,9 +92,19 @@
       margin-bottom: 0;
       max-height: 114px;
 
+      display: block;
+      text-overflow: ellipsis;
+      word-wrap: break-word;
+      overflow: hidden;
+      line-height: 1.375em;
+
       @extend %text-16-medium;
       color: $black-color;
       text-align: justify;
+
+      @media (max-width: 991px) {
+        font-size: 14px;
+      }
     }
 
     &__read-more {
@@ -82,6 +125,21 @@
     font-size: 14px;
     line-height: 16px;
     color: $black-color;
+
+    @media (max-width: 991px) {
+      font-size: 12px;
+      line-height: 14px
+    }
+
+    img {
+      width: 16px;
+      height: 16px;
+
+      @media (max-width: 991px) {
+        width: 14px;
+        height: 14px;
+      }
+    }
   }
 
   &__date {

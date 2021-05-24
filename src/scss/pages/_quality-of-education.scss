@@ -1,16 +1,29 @@
 .quality-of-education {
   margin-top: 208px;
 
+  @media (max-width: 767px) {
+    margin-top: 148px;
+  }
+
   &__content {
     position: relative;
     margin-top: 60px;
     display: flex;
     background-color: $light-bg-color;
 
+    @media (max-width: 767px) {
+      margin-top: 40px;
+    }
+
     &-img {
-      max-width: 50vw;
-      height: 100%;
+      width: 50vw;
+      height: auto;
       display: flex;
+
+      @media (max-width: 767px) {
+        width: 0;
+        display: none;
+      }
 
       img {
         height: 100%;
@@ -20,17 +33,42 @@
     }
 
     &-form {
-      max-width: 50vw;
-      width: 100%;
+      width: 50vw;
+      //width: 100%;
       height: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 0 40px;
+      padding: 40px;
+
+      @media (max-width: 767px) {
+        padding: 0 60px;
+        width: 100%;
+      }
+
+      @media (max-width: 575px) {
+        padding: 0;
+      }
+
+      @media (max-width: 447px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &__row {
+        @media (max-width: 447px) {
+          width: 100%;
+        }
+      }
 
       form {
         & > :nth-child(n+1) {
           margin-bottom: 20px;
+
+          @media (max-width: 767px) {
+            margin-bottom: 14px;
+          }
         }
 
         & > :last-child {
@@ -40,16 +78,34 @@
 
       .form {
         &-title {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          left: 32%;
-          padding: 0;
-          margin: 0;
+          @media (min-width: 768px) {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 22%;
+            padding: 0;
+            margin: 0;
+            max-width: 244px;
+            text-align: left;
+          }
 
-          color: $primary-color;
-          @extend %title-30-semi-bold;
-          max-width: 244px;
+          @media (min-width: 820px) {
+            left: 26%;
+          }
+
+          @media (min-width: 992px) {
+            left: 28%;
+          }
+
+          @media (min-width: 1200px) {
+            left: 30%;
+          }
+
+          @media (max-width: 767px) {
+            position: relative;
+            text-align: center;
+            margin-bottom: 20px;
+          }
         }
 
         &-item {
@@ -57,6 +113,11 @@
             @extend %text-18-30-medium;
             color: $black-color;
             margin-bottom: 4px;
+
+            @media (max-width: 767px) {
+              font-size: 16px;
+              line-height: 26px;
+            }
 
             &:hover {
               cursor: pointer;
@@ -75,6 +136,11 @@
 
             @extend %text-18-30-medium;
             color: $black-color;
+
+            @media (max-width: 767px) {
+              font-size: 16px;
+              line-height: 26px;
+            }
 
             &:active, &:focus {
               border-color: $primary-color;
@@ -103,6 +169,11 @@
 
           @extend %text-18-30-medium;
           color: $white-color;
+
+          @media (max-width: 767px) {
+            font-size: 16px;
+            line-height: 26px;
+          }
 
           &:hover {
             cursor: pointer;
