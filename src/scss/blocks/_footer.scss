@@ -5,7 +5,7 @@
 
   &-nav {
     padding-top: 40px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
 
     a {
       text-decoration: none;
@@ -86,11 +86,11 @@
     font-family: Avenir Next Cyr, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 14px;
+    line-height: 130%;
     color: $black-color;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
 
     a {
       text-decoration: none;
@@ -104,7 +104,16 @@
 
   &-copyright {
     background-color: $primary-color;
-    padding: 14px 0;
+    //padding: 14px 0;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 767px) {
+      height: auto;
+      padding: 10px;
+    }
 
     span {
       display: block;
@@ -112,13 +121,12 @@
       font-family: Avenir Next Cyr, sans-serif;
       font-style: normal;
       font-weight: 500;
-      font-size: 12px;
-      line-height: 15px;
+      font-size: 14px;
+      line-height: 130%;
       color: $white-color;
 
       @media (max-width: 360px) {
-        font-size: 10px;
-        line-height: 12px;
+        font-size: 12px;
       }
     }
   }

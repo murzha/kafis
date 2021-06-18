@@ -43,7 +43,15 @@
       z-index: 1000;
       top: -30px;
       left: initial;
-      right: -88vw;
+      right: -80vw;
+
+      @media (max-width: 696px) {
+        right: -84vw;
+      }
+
+      @media (max-width: 626px) {
+        right: -86vw;
+      }
 
       span:nth-child(1) {
         top: 9px;

@@ -84,7 +84,6 @@
 
     &__contacts {
       display: flex;
-      margin-right: 20px;
 
       @media (max-width: 767px) {
         display: none;
@@ -109,7 +108,7 @@
     }
 
     &__social {
-      margin-right: 20px;
+      margin-left: 20px;
 
       ul {
         list-style: none;
@@ -143,6 +142,7 @@
     &__language {
       display: flex;
       align-items: center;
+      margin-left: 20px;
 
       span {
         margin-left: 6px;
