@@ -80,6 +80,7 @@
         @extend %title-20-semi-bold;
         color: $primary-color;
         text-decoration: none;
+        transition: all 0.4s ease;
 
         @media (max-width: 991px) {
           font-size: 16px;
@@ -88,6 +89,7 @@
 
         &:hover {
           color: $secondary-color;
+          transition: all 0.4s ease;
         }
       }
     }
@@ -164,16 +166,25 @@
     margin-left: 20px;
     display: flex;
     align-items: center;
-
     color: $black-color;
     text-decoration: none;
+    transition: all 0.4s ease;
 
     &:hover {
       color: $secondary-color;
+      transition: all 0.4s ease;
+
+      svg path {
+        fill: $secondary-color;
+      }
     }
 
-    img {
+    svg {
       margin-right: 6px;
+
+      path {
+        transition: all 0.4s ease;
+      }
     }
   }
 }

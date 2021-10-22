@@ -10,9 +10,11 @@
     a {
       text-decoration: none;
       color: $black-color;
+      transition: all 0.4s ease;
 
       &:hover {
         color: $primary-color;
+        transition: all 0.4s ease;
       }
     }
 
@@ -95,16 +97,17 @@
     a {
       text-decoration: none;
       color: $primary-color;
+      transition: all 0.4s ease;
 
       &:hover {
         color: $secondary-color;
+        transition: all 0.4s ease;
       }
     }
   }
 
   &-copyright {
     background-color: $primary-color;
-    //padding: 14px 0;
     height: 54px;
     display: flex;
     align-items: center;

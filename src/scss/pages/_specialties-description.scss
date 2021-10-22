@@ -81,6 +81,7 @@
     a {
       @extend %text-18-30-medium;
       color: $black-color;
+      transition: all 0.4s ease;
 
       @media (max-width: 1199px) {
         font-size: 16px;
@@ -93,6 +94,7 @@
       }
 
       &:hover {
+        transition: all 0.4s ease;
         color: $primary-color;
       }
     }
@@ -139,23 +141,36 @@
       }
 
       li {
+        position: relative;
+        padding-left: 32px;
         margin-bottom: 20px;
         display: flex;
         align-items: center;
+
+        @media (max-width: 1199px) {
+          padding-left: 26px;
+        }
 
         &:last-child {
           margin-bottom: 0;
         }
 
-        img {
-          margin-right: 12px;
+        &:before {
+          position: absolute;
+          left: 1px;
+          top: 50%;
+          transform: translateY(-50%);
+          display: inline-block;
           width: 20px;
           height: 20px;
+          margin-right: 5px;
+          content: "";
+          background: url("../../icons/checkmarks/checkmark-red.svg") no-repeat 0 0;
+          background-size: 100%;
 
           @media (max-width: 1199px) {
-            margin-right: 8px;
-            width: 18px;
-            height: 18px;
+            height: 16px;
+            width: 16px;
           }
         }
       }

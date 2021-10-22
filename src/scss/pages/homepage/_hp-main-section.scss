@@ -129,17 +129,33 @@
       display: flex;
       align-items: center;
       text-decoration: none;
+
+      &:hover {
+        span {
+          color: $light-grey-color;
+          transition: all 0.4s ease;
+        }
+
+        svg path {
+          fill: $light-grey-color;
+        }
+      }
     }
 
-    img {
+    svg {
       height: 18px;
       width: 18px;
-      margin-right: 12px;
+      margin-right: 6px;
+
+      path {
+        transition: all 0.4s ease;
+      }
     }
 
     span {
       @extend %text-16-medium;
       color: $white-color;
+      transition: all 0.4s ease;
     }
 
     @media (max-width: 991px) {

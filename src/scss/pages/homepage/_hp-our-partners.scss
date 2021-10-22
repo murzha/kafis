@@ -23,6 +23,7 @@
     display: flex;
     align-items: center;
     opacity: 0.7;
+    transition: all 0.4s ease;
 
     @media (max-width: 1199px) {
       padding: 30px;
@@ -44,6 +45,7 @@
 
     &:hover {
       opacity: 1;
+      transition: all 0.4s ease;
     }
 
     img {

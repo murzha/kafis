@@ -23,6 +23,7 @@
         content: "";
         background: url("../../../icons/arrows/arrow-black.svg") no-repeat 0 0;
         background-size: 100%;
+        transition: all 0.4s ease;
 
         @media (max-width: 1199px) {
           height: 16px;

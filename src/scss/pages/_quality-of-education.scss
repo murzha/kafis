@@ -34,7 +34,6 @@
 
     &-form {
       width: 50vw;
-      //width: 100%;
       height: auto;
       display: flex;
       flex-direction: column;
@@ -133,6 +132,7 @@
             margin: 0;
             padding: 6px;
             width: 100%;
+            transition: all 0.1s ease;
 
             @extend %text-18-30-medium;
             color: $black-color;
@@ -147,6 +147,7 @@
               box-shadow: none;
               border-radius: 0;
               outline: none;
+              transition: all 0.1s ease;
             }
           }
 
@@ -166,6 +167,7 @@
           border: 0;
           outline: none;
           box-shadow: none;
+          transition: all 0.4s ease;
 
           @extend %text-18-30-medium;
           color: $white-color;
@@ -177,6 +179,7 @@
 
           &:hover {
             cursor: pointer;
+            transition: all 0.4s ease;
             background-color: $secondary-color;
           }
         }

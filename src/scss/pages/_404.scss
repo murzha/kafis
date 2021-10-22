@@ -1,0 +1,67 @@
+.page404 {
+  &-wrapper {
+    padding: 180px 0;
+
+    @media (max-width: 767px) {
+      padding: 140px 0;
+    }
+
+    @media (max-width: 575px) {
+      padding: 120px 0;
+    }
+  }
+
+  &-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img{
+      height: 100px;
+      width: 100px;
+    }
+
+    h2{
+      @extend %title-36-bold;
+      color: $black-color;
+      margin: 20px 0 0;
+
+
+      @media (max-width: 767px) {
+          font-size: 30px;
+          line-height: 32px;
+      }
+    }
+
+    p{
+      margin: 20px 0 0;
+      @extend %text-18-24-medium;
+      color: $black-color;
+      text-align: center;
+
+      @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    a{
+      text-decoration: none;
+      margin: 20px 0 0;
+      @extend %text-18-24-medium;
+      color: $primary-color;
+      transition: all 0.4s ease;
+
+      @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      &:hover{
+        color: $secondary-color;
+        transition: all 0.4s ease;
+      }
+    }
+  }
+}
