@@ -68,6 +68,11 @@ gulp.task('js-libs', function () {
 // BrowserSync task
 gulp.task('browser-sync', function () {
     browserSync.init({
+        notify: false,
+        open: false,
+        port: 3002,
+        cors: true,
+        ui: {port: 3003},
         server: {
             baseDir: "src/"
         }
